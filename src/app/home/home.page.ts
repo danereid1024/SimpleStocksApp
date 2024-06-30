@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ItemReorderEventDetail } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-home',
@@ -9,11 +9,5 @@ import { ItemReorderEventDetail } from '@ionic/angular';
 export class HomePage {
 
   constructor() {}
-
-  handleReorder(ev: CustomEvent<ItemReorderEventDetail>) {
-
-    console.log('Dragged from index', ev.detail.from, 'to', ev.detail.to);
-    ev.detail.complete();
-  }
 
 }

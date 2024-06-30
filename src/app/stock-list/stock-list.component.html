@@ -1,0 +1,15 @@
+<ion-list>
+  <ion-reorder-group [disabled]="false" (ionItemReorder)="handleReorder($any($event))">
+    <ion-item>
+    <ion-label>
+      <h2>AAPL</h2>
+      <p>Apple Inc.</p>
+    </ion-label>
+    <ion-label class="end-label">
+      <h2>210.62</h2>
+      <p>-3.48</p>
+    </ion-label>
+    <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+      </ion-reorder-group>
+    </ion-list>
